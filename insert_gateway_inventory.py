@@ -10,7 +10,7 @@ def csv_export():
         csv_reader = reader(read_obj)
         header = next(csv_reader)
         if header != None:
-            for row in reversed(list(reader(read_obj))):
+            for row in csv_reader:
                 db_conn = psycopg2.connect(host="localhost", port="5432", dbname="database_name", user="database_user", password="database-password")
                 db_cursor = db_conn.cursor()
 
