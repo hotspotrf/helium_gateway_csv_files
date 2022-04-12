@@ -4,4 +4,4 @@ This repository provides daily Helium gateway CSV files along with python script
 
 ## Dependencies
 
-These python scripts rely on `psycopg2` that can be installed using `pip3 install psycopg2`
+These python scripts rely on `psycopg2` that can be installed using `pip3 install psycopg2`.
