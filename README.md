@@ -9,3 +9,7 @@ These python scripts rely on `psycopg2` that can be installed using `pip3 instal
 ## Useage
 
 You'll want to insert gateways first `insert_gateway_inventory.py` and then update their status `insert_gateway_status.py`, as it will not allow an update of status unless the gateway exists in the inventory.
+
+## CSV Files
+
+You can download the CSV files here: [Helium CSV Files]( "Helium CSV Files")
