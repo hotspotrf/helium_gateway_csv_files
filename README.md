@@ -1,2 +1,2 @@
-# helium_etl_gateway_csv
+# Helium ETL Gateway CSV
 Daily CSV files of Helium gateways.
