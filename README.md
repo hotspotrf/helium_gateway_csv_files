@@ -12,4 +12,4 @@ You'll want to insert gateways first `insert_gateway_inventory.py` and then upda
 
 ## CSV Files
 
-You can download the CSV files here: [Helium CSV Files]({zipFileName} "Helium CSV Files")
+You can download the CSV files here: [Helium CSV Files](2022-04-12-12-35-12_files.zip "Helium CSV Files")
