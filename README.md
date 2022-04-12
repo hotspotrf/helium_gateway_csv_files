@@ -1,2 +1,3 @@
-# Helium ETL Gateway CSV
-Daily CSV files of Helium gateways.
+# Helium Gateway CSV Files
+
+This repository provides daily Helium 
