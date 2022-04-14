@@ -26,20 +26,50 @@ def csv_export():
 
                     listen = str(listen).replace("'", '"')
 
+                    try:
+                        block = int(block)
+                    except:
+                        block = str(block)
+                        pass
+
+                    if not block:
+                        block = 'null'
+
+                    try:
+                        last = int(last)
+                    except:
+                        last = str(last)
+                        pass
+
+                    try:
+                        poc = int(poc)
+                    except:
+                        poc = str(poc)
+                        pass
+
+                    if not peer:
+                        peer = 'null'
+                    else:
+                        peer = f'\'{peer}\''
+
+                    if not last:
+                        last = 'null'
+
+                    if not poc:
+                        poc = 'null'
+
+                    addWits = str(f"INSERT INTO gateway_status (address, online, block, updated_at, poc_interval, last_challenge, peer_timestamp, listen_addrs) VALUES('{addy}', '{online}', {block}, '{updated}', {poc}, {last}, {peer}, '{listen}') ON CONFLICT (address) DO NOTHING")
+
                     print(addy, online, block, updated, poc, last, peer)
 
-                    block = int(block)
-                    last=int(last)
-                    poc=int(poc)
-
-                    addWits = str(f"INSERT INTO gateway_status (address, online, block, updated_at, poc_interval, last_challenge, peer_timestamp, listen_addrs) VALUES('{addy}', '{online}', {block}, '{updated}', {poc}, {last}, '{peer}', '{listen}') ON CONFLICT (address) DO NOTHING")
+                    print(addWits)
 
                     db_cursor.execute(addWits)
                     db_conn.commit()
                 except Exception as e:
                     print(e)
                     pass
-                
+
                 db_cursor.close()
                 db_conn.close()
                 
