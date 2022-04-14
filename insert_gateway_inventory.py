@@ -60,9 +60,11 @@ def csv_export():
                         pass
 
                     if not location:
-                        location = None
+                        location = 'null'
+                    else:
+                        location = f'\'{location}\''
 
-                    addWits = str(f"INSERT INTO gateway_inventory (address, owner, location, last_poc_challenge, last_poc_onion_key_hash, witnesses, first_block, last_block, nonce, name, first_timestamp, reward_scale, elevation, gain, location_hex, mode, payer) VALUES('{address}', '{owner}', '{location}', {lastcallenge}, '{lasthash}', '{witnesses}', {firstblock}, {lastblock}, {nonce}, '{name}', '{firsttimestamp}', {reward}, {elevation}, {gain}, '{locationhex}', '{mode}', '{payer}') ON CONFLICT (address) DO NOTHING")
+                    addWits = str(f"INSERT INTO gateway_inventory (address, owner, location, last_poc_challenge, last_poc_onion_key_hash, witnesses, first_block, last_block, nonce, name, first_timestamp, reward_scale, elevation, gain, location_hex, mode, payer) VALUES('{address}', '{owner}', {location}, {lastcallenge}, '{lasthash}', '{witnesses}', {firstblock}, {lastblock}, {nonce}, '{name}', '{firsttimestamp}', {reward}, {elevation}, {gain}, '{locationhex}', '{mode}', '{payer}') ON CONFLICT (address) DO NOTHING")
                     
                     print(addWits)
 
