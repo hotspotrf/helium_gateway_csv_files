@@ -14,4 +14,4 @@ You'll want to insert gateways first `insert_gateway_inventory.py` and then upda
 
 ## CSV Files
 
-You can download the CSV files here: [Helium CSV Files](https://storage.googleapis.com/hotspotrf_csv_files/2022-04-13-16-38-00_files.zip "Helium CSV Files")
+You can download the CSV files here: [Helium CSV Files](https://storage.googleapis.com/hotspotrf_csv_files/2022-04-14-06-36-13_files.zip "Helium CSV Files")
