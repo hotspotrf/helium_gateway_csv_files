@@ -2,6 +2,10 @@
 
 This repository provides daily Helium gateway CSV files along with python scripts used to insert these CSV files into a postgresql database used by [Helium Blockchain ETL](https://github.com/helium/blockchain-etl "Helium Blockchain ETL").
 
+## Terms of Service
+
+This repository is provided under HotspotRF's terms of service: [https://hotspotrf.com/hotspotrf-terms-of-use/](https://hotspotrf.com/hotspotrf-terms-of-use/)
+
 ## Dependencies
 
 These python scripts rely on `psycopg2` that can be installed using `pip3 install psycopg2`.
@@ -14,4 +18,4 @@ You'll want to insert gateways first `insert_gateway_inventory.py` and then upda
 
 ## CSV Files
 
-You can download the CSV files here: [Helium CSV Files](https://storage.googleapis.com/hotspotrf_csv_files/2022-04-14-06-36-13_files.zip "Helium CSV Files")
+You can download the CSV files here: [Helium CSV Files](https://storage.googleapis.com/hotspotrf_csv_files/2022-04-14-16-39-26_files.zip "Helium CSV Files")
